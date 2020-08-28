@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+	<head> 
+		<meta charset="utf-8"> 
+			<title> Compras mercado </title> 
+		</head> 
+		<body> 
+			<h2> Cálculo do valor das compras  </h2>
+			<form action= "compras.php" method = "get">
+				<fieldset>
+
+					<legend> Compras  </legend>
+					<label> 🛒 Insira o valor total da compra: </label>
+					<input type = "number" 
+min="0"
+step=".01" 
+placeholder= "valor" autofocus
+name = "total" required>
+						<br>
+							<br>
+								<input type="checkbox" name="entrega" value="taxaentrega"> 
+									<label> 🚚 Entrega em domicílio (taxa de 2%) </label>
+									<br> 
+										<br>
+											<input type="checkbox" name="cartao" value="metodopagamento"> 
+												<label> 💳 Pagamento em cartão (5% de desconto) </label>
+												<br> <br>
+														<button type="submit" name="enviar"> Calcular total </button>
+													</fieldset>
+												</form>
+											</body> 
+										</html> 
